@@ -9,7 +9,7 @@ const PORT = process.env.PORT|| 8080
 app.use(express.json())
 app.use(morgan('combined'))
 app.use(cors({
-  origin="https://deploy-frontend-demo-one.vercel.app/"
+  origin:"https://deploy-frontend-demo-one.vercel.app/"
 }))
 
 app.get('/users', async (req, res) => {
